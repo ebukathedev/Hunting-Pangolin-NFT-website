@@ -1,6 +1,6 @@
 @font-face {
-  font-family: JungleAdventurer;
-  src: url("/assets/fonts/JungleAdventurer.ttf");
+	font-family: JungleAdventurer;
+	src: url("/assets/fonts/JungleAdventurer.ttf");
 }
 
 :root {
@@ -31,6 +31,22 @@
 
 .yellow-bg {
 	background-color: var(--yellow);
+}
+
+.light-text {
+	color: var(--light);
+}
+
+.yellow-text {
+	color: var(--yellow);
+}
+
+body {
+	min-height: 100vh;
+}
+
+h2 {
+	font-family: JungleAdventurer;
 }
 
 /* menu */
@@ -103,15 +119,43 @@
 }
 
 .social-icons {
-    li {
-        a {
-            color: var(--warning);
-            font-size: 1.3rem;
-        }
-    }
+	li {
+		a {
+			color: var(--warning);
+			font-size: 1.3rem;
+		}
+	}
+}
+
+.intro-section {
+	> .container {
+		> .row {
+			.intro-nfts-container {
+				.nfts {
+					display: grid;
+					place-content: center;
+					grid-template-columns: repeat(2, 1fr);
+					gap: .8rem;
+					max-width: 400px;
+
+					img {
+						width: 100%;
+						display: block;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 768px) {
+	nav.navbar {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+	}
 	.links {
 		height: auto;
 		li {
@@ -119,7 +163,7 @@
 			border-radius: 0.3rem;
 
 			&.active {
-                background-color: var(--warning);
+				background-color: var(--warning);
 				a {
 					color: var(--primary);
 					font-weight: normal;
@@ -143,6 +187,16 @@
 	}
 }
 
+.page-hero {
+	// height: 480px;
+	// background-image: url("/assets/img/banner.jpg");
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// background-color: red;
+	img {
+		min-width: 100%;
+	}
+}
 
 /* .back-to-top {
   position: fixed;

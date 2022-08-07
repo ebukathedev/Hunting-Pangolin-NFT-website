@@ -32,6 +32,22 @@
   background-color: var(--yellow);
 }
 
+.light-text {
+  color: var(--light);
+}
+
+.yellow-text {
+  color: var(--yellow);
+}
+
+body {
+  min-height: 100vh;
+}
+
+h2 {
+  font-family: JungleAdventurer;
+}
+
 /* menu */
 .hamburger_menu {
   gap: 5px;
@@ -98,7 +114,26 @@
   font-size: 1.3rem;
 }
 
+.intro-section > .container > .row .intro-nfts-container .nfts {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+  max-width: 400px;
+}
+.intro-section > .container > .row .intro-nfts-container .nfts img {
+  width: 100%;
+  display: block;
+}
+
 @media only screen and (min-width: 768px) {
+  nav.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
   .links {
     height: auto;
   }
@@ -127,6 +162,10 @@
     gap: 0.6rem;
   }
 }
+.page-hero img {
+  min-width: 100%;
+}
+
 /* .back-to-top {
   position: fixed;
   bottom: 20px;
