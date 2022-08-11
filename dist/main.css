@@ -1,6 +1,6 @@
 @font-face {
   font-family: JungleAdventurer;
-  src: url("/assets/fonts/JungleAdventurer.ttf");
+  src: url("/dist/fonts/JungleAdventurer.ttf");
 }
 :root {
   --primary: #001e6c;
@@ -8,7 +8,7 @@
   --success: #198754;
   --info: #0dcaf0;
   --yellow: #fcd900;
-  --warning: #f8c347;
+  --warning: rgb(248, 196, 73);
   --danger: #dc3545;
   --light: rgba(255, 255, 255, 0.7);
   --dark: #212529;
@@ -46,6 +46,10 @@ body {
 
 h2 {
   font-family: JungleAdventurer;
+}
+
+p {
+  color: var(--light);
 }
 
 /* menu */
@@ -114,16 +118,51 @@ h2 {
   font-size: 1.3rem;
 }
 
-.intro-section > .container > .row .intro-nfts-container .nfts {
+.intro-section > .container > .row .intro-nfts-container .intro-nfts-sub-container .nfts {
   display: grid;
   place-content: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.8rem;
-  max-width: 400px;
+  max-width: 25rem;
 }
-.intro-section > .container > .row .intro-nfts-container .nfts img {
+.intro-section > .container > .row .intro-nfts-container .intro-nfts-sub-container .nfts img {
   width: 100%;
   display: block;
+  border-radius: 1rem;
+}
+
+.roadmap-section > img {
+  width: 100%;
+  margin-top: -0.5rem;
+}
+.roadmap-section .wrapper .container .roadmap {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+}
+.roadmap-section .wrapper .container .roadmap div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+.roadmap-section .wrapper .container .roadmap div:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.roadmap-section .wrapper .container .roadmap div .percent {
+  font-family: JungleAdventurer;
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+.roadmap-section .wrapper .container .roadmap div .percent + span {
+  text-align: left;
+}
+
+.gallery-section > img {
+  width: 100%;
+  margin-top: -0.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -160,6 +199,10 @@ h2 {
     flex-direction: row;
     align-items: center;
     gap: 0.6rem;
+  }
+  .roadmap-section .wrapper .container .roadmap div {
+    flex-direction: row;
+    gap: 2rem;
   }
 }
 .page-hero img {

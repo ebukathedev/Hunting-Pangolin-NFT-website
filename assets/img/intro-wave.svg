@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1439px" height="320.625px" viewBox="0 0 1439 320.625" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L1440 0L1440 320.625L0 320.625L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="wave1" transform="matrix(1 0 0 -1 0 320.625)">
+    <path d="M0 0L1440 0L1440 320.625L0 320.625L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M0 32.0623L48 74.8457C96 117.228 192 203.396 288 208.406C384 213.416 480 139.271 576 96.1873C672 53.1033 768 43.0837 864 80.156C960 117.228 1056 203.396 1152 224.437C1248 245.478 1344 203.396 1392 181.654L1440 160.312L1440 320.625L1392 320.625C1344 320.625 1248 320.625 1152 320.625C1056 320.625 960 320.625 864 320.625C768 320.625 672 320.625 576 320.625C480 320.625 384 320.625 288 320.625C192 320.625 96 320.625 48 320.625L0 320.625L0 32.0623Z" id="Shape" fill="#344CB7" stroke="none" />
+    </g>
+  </g>
+</svg>
