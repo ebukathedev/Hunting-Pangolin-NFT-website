@@ -1,6 +1,6 @@
 @font-face {
   font-family: JungleAdventurer;
-  src: url("/dist/fonts/JungleAdventurer.ttf");
+  src: url("fonts/JungleAdventurer.ttf");
 }
 :root {
   --primary: #001e6c;
