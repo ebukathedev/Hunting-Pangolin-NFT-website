@@ -21,9 +21,12 @@
 // 	});
 // });
 const hamburgerMenu = document.querySelector(".hamburger_menu");
-const navLinks = document.querySelector(".links")
+const navLinks = document.querySelector(".links");
 
 hamburgerMenu.addEventListener("click", () => {
 	hamburgerMenu.classList.toggle("change");
-	navLinks.classList.toggle("show-links")
+	navLinks.classList.toggle("show-links");
 });
+
+// new WOW().init();
+
