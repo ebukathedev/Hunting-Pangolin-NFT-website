@@ -22,13 +22,16 @@
 		<link
 			rel="stylesheet"
 			href="/assets/bootstrap-icons/font/bootstrap-icons.css"
-		/>
-		<link rel="stylesheet" href="/assets/vendor/animate/animate.css" /> -->
+		/> -->
+		<link rel="stylesheet" href="/assets/vendor/animate/animate.css" />
 		<link rel="stylesheet" href="dist/main.css" />
 
 		<title>Hunting Pangolin</title>
 	</head>
 	<body>
+
+		<!-- back to top button -->
+		<div class="back-to-top"></div>
 		<!-- navbar -->
 		<nav class="navbar navbar-expand-lg primary-bg">
 			<div class="container d-block d-md-flex">
@@ -56,37 +59,38 @@
 				</div>
 
 				<!-- links -->
-				<ul class="navbar-nav links">
-					<li><a href="index.html">home</a></li>
-					<li><a href="#">roadmap</a></li>
-					<li><a href="#">team</a></li>
-					<li><a href="#">gallery</a></li>
-					<li><a href="#">mint</a></li>
-				</ul>
-
-				<!-- socials -->
-				<ul class="navbar-nav social-icons d-none d-md-flex">
-					<li><a href="#" class="bi bi-twitter"></a></li>
-				</ul>
+				<div class="links-container">
+					<ul class="navbar-nav links">
+						<li><a class="scroll-link" href="#about">about us</a></li>
+						<li><a class="scroll-link" href="#roadmap">hunting map</a></li>
+						<li><a class="scroll-link" href="#gallery">gallery</a></li>
+						<li><a class="scroll-link" href="#about">team</a></li>
+					</ul>
+					<!-- socials -->
+					<ul class="navbar-nav social-icons d-none d-md-flex">
+						<li><a href="#" class="bi bi-twitter"></a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 
 		<!-- hero  -->
-		<section class="page-hero">
+		<section class="page-hero secondary-bg">
 			<img
-				class="img-fluid"
+				class="img-fluid wow zoomIn"
 				src="assets/img/banner.svg"
 				alt="Hero image"
 			/>
 		</section>
 
 		<!-- intro -->
-		<section class="intro-section p-3 py-5 secondary-bg text-light">
+		<section class="intro-section p-3 py-5 secondary-bg text-light" id="about">
 			<div class="container py-md-5">
+				<!-- welcome row -->
 				<div
-					class="row g-3 mb-5 justify-content-center align-items-center wow fadeInRight"
+					class="row g-3 mb-5 justify-content-center align-items-center"
 				>
-					<div class="col-md-7">
+					<div class="col-md-7 wow fadeInUp">
 						<h2 class="display-6"> welcome to our site! </h2>
 						<p>
 							Our NFT is a collection of 10,000 FREE unique
@@ -103,7 +107,7 @@
 						</p>
 					</div>
 					<div
-						class="col-md-5 d-flex justify-content-center intro-nfts-container"
+						class="col-md-5 d-flex justify-content-center intro-nfts-container wow zoomIn"
 					>
 						<div class="p-3 intro-nfts-sub-container">
 							<div class="nfts">
@@ -127,10 +131,12 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- poachers row -->
 				<div
-					class="row g-3 mt-5 justify-content-center align-items-center flex-md-row-reverse"
+					class="row g-5 mt-5 justify-content-center align-items-center flex-md-row-reverse"
 				>
-					<div class="col-md-7">
+					<div class="col-xl-7 wow fadeInUp">
 						<h2 class="display-6"
 							>would you help us hunt our poachers?</h2
 						>
@@ -160,47 +166,40 @@
 						</p>
 					</div>
 					<div
-						class="col-md-5 d-flex justify-content-center intro-nfts-container"
+						class="col-xl-5 d-flex justify-content-center video-container wow zoomIn"
 					>
-						<div class="p-3 intro-nfts-sub-container">
-							<div class="nfts">
-								<img
-									src="assets/img/pangolin-1.jpg"
-									alt="A pangolin"
-								/>
-								<img
-									src="assets/img/pangolin-2.jpg"
-									alt="A pangolin"
-								/>
-								<img
-									src="assets/img/pangolin-3.jpg"
-									alt="A pangolin"
-								/>
-								<img
-									src="assets/img/pangolin-4.jpg"
-									alt="A pangolin"
-								/>
-							</div>
+						<div class="video-wrapper mt-3 mt-xl-0">
+							<iframe
+								src="https://www.youtube.com/embed/DqC3ieJJlFM"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							>
+							</iframe>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<section class="top-wave primary-bg">
+			<img src="assets/img/intro-wave.svg" alt="wave" class="img-fluid"/>
+		</section>
+
 		<!-- Hunting map -->
-		<section class="roadmap-section primary-bg text-light">
-			<img src="assets/img/intro-wave.svg" alt="wave" />
+		<section class="roadmap-section primary-bg text-light" id="roadmap">
 			<div class="p-3 pb-5 wrapper">
 				<div class="container text-center">
-					<h2 class="display-6">hunting map</h2>
-					<p>
+					<h2 class="display-6 wow fadeInUp">hunting map</h2>
+					<p class="wow fadeInUp">
 						Hunting our poachers cannot be achieved overnight and is
 						not a one step process, so we're here for the long term.
 					</p>
 					<div
-						class="my-5 roadmap secondary-bg light-text p-2 p-md-4"
+						class="my-5 roadmap secondary-bg light-text p-2 p-md-4 wow fadeInRight"
 					>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">10%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -208,7 +207,7 @@
 								eius odit. Esse omnis quod ducimus ipsa!</span
 							>
 						</div>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">20%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -216,7 +215,7 @@
 								eius odit. Esse omnis quod ducimus ipsa!</span
 							>
 						</div>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">30%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -224,7 +223,7 @@
 								eius odit. Esse omnis quod ducimus ipsa!</span
 							>
 						</div>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">40%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -232,7 +231,7 @@
 								eius odit. Esse omnis quod ducimus ipsa!</span
 							>
 						</div>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">50%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -240,7 +239,7 @@
 								eius odit. Esse omnis quod ducimus ipsa!</span
 							>
 						</div>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">60%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -248,7 +247,7 @@
 								eius odit. Esse omnis quod ducimus ipsa!</span
 							>
 						</div>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">70%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -256,7 +255,7 @@
 								eius odit. Esse omnis quod ducimus ipsa!</span
 							>
 						</div>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">80%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -264,7 +263,7 @@
 								eius odit. Esse omnis quod ducimus ipsa!</span
 							>
 						</div>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">90%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -272,7 +271,7 @@
 								eius odit. Esse omnis quod ducimus ipsa!</span
 							>
 						</div>
-						<div>
+						<div class="wow fadeIn">
 							<span class="percent">100%</span>
 							<span
 								>Lorem ipsum dolor sit amet consectetur,
@@ -286,12 +285,12 @@
 		</section>
 
 		<!-- gallery -->
-		<section class="gallery-section secondary-bg text-light">
+		<section class="gallery-section secondary-bg text-light" >
 			<img src="assets/img/gallery-wave.svg" alt="wave" />
-			<div class="p-3 wrapper">
+			<div class="p-3 wrapper" id="gallery">
 				<div class="container text-center">
-					<h2 class="display-6">gallery</h2>
-					<p>All our pangolins in their full glory!</p>
+					<h2 class="display-6 wow fadeInUp">gallery</h2>
+					<p class="wow fadeInUp">All our pangolins in their full glory!</p>
 
 					<!-- <div class="gallery-nfts mt-5">
 						<div
@@ -316,8 +315,8 @@
 		></script>
 
 		<!-- local scripts -->
-		<!-- <script src="/assets/js/bootstrap.bundle.min.js"></script>
-		<script src="/assets/vendor/wow/wow.min.js"></script> -->
+		<!-- <script src="/assets/js/bootstrap.bundle.min.js"></script> -->
+		<script src="/assets/vendor/wow/wow.min.js"></script>
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
