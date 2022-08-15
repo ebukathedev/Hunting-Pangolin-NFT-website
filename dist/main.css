@@ -128,8 +128,27 @@ nav.fixed-navbar {
   font-size: 1.3rem;
 }
 
-.show-links {
-  height: 10rem;
+.music-controls {
+  justify-content: start;
+  padding-bottom: 0.25rem;
+}
+.music-controls li #music-btn {
+  background-color: var(--warning);
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.25rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: var(--transition);
+}
+.music-controls li:hover #music-btn {
+  margin-left: 1rem;
 }
 
 .intro-section > .container > .row .intro-nfts-container .intro-nfts-sub-container .nfts {

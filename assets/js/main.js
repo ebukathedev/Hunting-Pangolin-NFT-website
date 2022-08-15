@@ -5,6 +5,8 @@ const navLinksContainer = document.querySelector(".links-container");
 const navLinks = document.querySelector(".links");
 const scrollLinks = document.querySelectorAll(".scroll-link");
 
+const musicControls = document.querySelector(".music-controls")
+
 // Background Music
 // let audio = new Audio("/assets/sound/pangolin-mas-1.wav");
 
@@ -13,9 +15,10 @@ hamburgerMenu.addEventListener("click", () => {
 
 	let containerHeight = navLinksContainer.getBoundingClientRect().height;
 	let linksHeight = navLinks.getBoundingClientRect().height;
-
+	let musicControlsHeight = musicControls.getBoundingClientRect().height;
+	
 	if (containerHeight === 0) {
-		navLinksContainer.style.height = `${linksHeight}px`;
+		navLinksContainer.style.height = `${linksHeight + musicControlsHeight}px`;
 	} else {
 		navLinksContainer.style.height = "0px";
 	}
